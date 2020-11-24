@@ -5,5 +5,5 @@ from django.http import HttpResponse
 
 def home(request):
     #return HttpResponse("hello from django")
-    return render(request,'board/index.html',{'title':'home'})
+    return render(request,'index.html',{'title':'home'})
 

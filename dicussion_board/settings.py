@@ -59,7 +59,7 @@ ROOT_URLCONF = 'dicussion_board.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,8 +131,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 #static file used by all apps
-STATICFILES_DIR=[
-    os.path.join(BASE_DIR,"static"),
-    'static',
-
-]
+STATICFILES_DIRS=[os.path.join(BASE_DIR,'static'),]
